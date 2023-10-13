@@ -1,66 +1,10 @@
 import re
-unKind_words = ['madarchod',
-'bhenchod',
-'maakichut',
-'bhosdike',
-'maaklaude',
-'bsdk',
-'rndiik',
-'randi',
-'lund',
-'chutiya',
-'bhdwee',
-'gndu',
-'gandu',
-'bhadwee',
-'bhadwee',
-'chutt',
-'choochi',
-'bhosdaa',
-'bhosdike',
-'bhsdike',
-'chudaap',
-'lawde',
-'lnd',
-'betichod',
-'btichd',
-'betichod',
-'chod',
-'gndwee',
-'gandwee',
-'gndmree',
-'gandmree',
-'kutte',
-'kaminey',
-'kminey',
-'mc',
-'bc',
-'mcc'
-]
-
-start_unkind_words = ['mada',
- 'beti',
- 'bti',
- 'chod',
- 'chut',
- 'lun',
- 'lawd',
- 'lode',
- 'gnd',
- 'gand',
- 'mc',
- 'bc',
- 'chut',
- 'randi',
- 'lndu',
- 'bhsd',
- 'bhons',
- 'bhad',
- "bhen",
- "bhnk"
- ]
 
 def remove_swearings(text):
+    start_unkind_words = ['mada', 'beti', 'bti', 'chod', 'chut', 'lun', 'lawd', 'lode', 'gnd', 'gand', 'mc', 'bc', 'chut', 'randi', 'lndu', 'bhsd', 'bhons', 'bhad', "bhen", "bhnk"]
+
+    unKind_words = ['madarchod','bhenchod','maakichut','bhosdike','maaklaude','bsdk','rndiik','randi','lund','chutiya','bhdwee','gndu','gandu','bhadwee','bhadwee','chutt','choochi','bhosdaa','bhosdike','bhsdike','chudaap','lawde','lnd','betichod','btichd','betichod','chod','gndwee','gandwee','gndmree','gandmree','kutte','kaminey','kminey','mc','bc','mcc']
+    
     print(text, '--- the actual text')
     words = text.split(' ')
     new_sentense = ''
