@@ -58,4 +58,3 @@ def get_facebook_post_date(link):
     print(txt.split('\n')[2])
     maybe_date = txt.split('\n')[3], txt.split('\n')[2]
     return img1, img2, maybe_date
-   
